@@ -1,4 +1,4 @@
-import { createRouter, createMemoryHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 import CurrenciesView from '../views/Currencies.view.vue';
 
 
@@ -16,7 +16,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHashHistory(),
   routes
 });
 
